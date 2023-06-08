@@ -2,11 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-
-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Check Password</title>
   </head>
   <body>
@@ -19,12 +16,22 @@ scale=1.0"
         <input type="password" name="password" id="password" />
         <label for="check-password">Re-enter your password: </label>
         <input type="password" name="check-password" id="check-password" />
-        <span id="alert"></span><br />
-        <span id="alert2"></span><br />
-        <span id="alert3"></span><br />
-        <span id="alert4"></span><br />
-        <span id="alert5"></span><br />
-        <span id="alert6"></span><br />
+        <span class="block" id="alert"
+          >Les mots de passe ne correspondent pas</span
+        >
+        <span class="block" id="alert2">Le mot de passe est trop court</span>
+        <span class="block" id="alert3"
+          >Votre mot de passe doit contenir au moins une lettre minuscule</span
+        >
+        <span class="block" id="alert4"
+          >Votre mot de passe doit contenir au moins une lettre majuscule</span
+        >
+        <span class="block" id="alert5"
+          >Votre mot de passe doit contenir au moins un chiffre</span
+        >
+        <span class="block" id="alert6"
+          >Votre mot de passe doit contenir au moins un caractère spécial</span
+        >
         <h3 id="alert7"></h3>
         <br />
         <input type="button" value="Send" />
